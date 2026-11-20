@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Open a selected project and view its image gallery",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "selected work project modal",
+      "project statement",
+      "image gallery display",
+      "original image aspect ratio",
+      "large project viewer",
+      "About section portrait image",
+      "smooth portrait hover enlargement and return"
+    ],
+    "description": "Verifies a selected work card opens a large project viewer with its description and visual gallery.",
+    "steps": [
+      "Navigate to Selected Work",
+      "Open Destiny Best Supermarket",
+      "Inspect the project statement and first gallery image",
+      "Scroll to About and move the pointer over the portrait, then move it away"
+    ],
+    "expected": "A large project modal opens with the project statement and gallery navigation; portrait and landscape images retain their original aspect ratios without cropping or stretching. The About section displays Ryan’s portrait larger than the former monogram, smoothly enlarges it on hover, and returns it to its normal size when the pointer leaves."
+  },
+  {
+    "name": "Automatically advance and loop project images",
+    "viewport": "desktop",
+    "covers": [
+      "two-second image rotation",
+      "right-to-left wipe transition",
+      "continuous image loop",
+      "manual image navigation"
+    ],
+    "description": "Verifies the gallery advances through the project visuals and cycles back to the beginning.",
+    "steps": [
+      "Open a project with multiple images",
+      "Wait for the next image to appear",
+      "Continue through the final image"
+    ],
+    "expected": "Images advance automatically every two seconds with a right-to-left wipe, the project modal remains open throughout each transition, and the gallery returns to its first image after the last."
+  },
+  {
+    "name": "View the motion work as separate video clips",
+    "viewport": "desktop",
+    "covers": [
+      "visual experiments video gallery",
+      "video playback",
+      "video downloads disabled in player controls"
+    ],
+    "description": "Verifies the Visual Experiments project presents the selected short clips as videos rather than running them through the image carousel.",
+    "steps": [
+      "Open Visual experiments",
+      "Locate the three video clips",
+      "Play one clip using its player controls"
+    ],
+    "expected": "Three separate video players are displayed and the image carousel timing and wipe transition are not applied to them."
+  },
+  {
+    "name": "Navigate portfolio sections on mobile",
+    "viewport": "mobile",
+    "covers": [
+      "responsive navigation menu",
+      "anchor navigation",
+      "mobile project modal layout"
+    ],
+    "description": "Verifies visitors can navigate the portfolio on a narrow screen and the project viewer remains usable.",
+    "steps": [
+      "Open the portfolio at mobile width",
+      "Open the navigation menu",
+      "Choose Work and open a project"
+    ],
+    "expected": "The menu closes, the Work section is reached, and the project modal fits within the mobile viewport."
+  },
+  {
+    "name": "Use the contact call to action",
+    "viewport": "desktop",
+    "covers": [
+      "contact call to action",
+      "direct Gmail compose link",
+      "direct WhatsApp chat link",
+      "direct Instagram DM link",
+      "same-tab navigation without pop-up windows"
+    ],
+    "description": "Verifies the contact action reveals direct email, WhatsApp and Instagram destinations.",
+    "steps": [
+      "Navigate to Contact",
+      "Activate Start a conversation"
+    ],
+    "expected": "The contact panel displays direct email, WhatsApp and Instagram options. Each opens its corresponding composer or direct-message destination in the same tab without spawning a pop-up window."
+  }
+]

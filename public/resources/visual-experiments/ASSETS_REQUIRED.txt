@@ -1,0 +1,1 @@
+See ../../../../ASSET_MANIFEST.md for the exact media files and expected filenames for this folder.
